@@ -1,0 +1,158 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+
+    overflow: hidden;
+}
+.hero .container{
+   border:#bff077 5px double;
+  border-radius:20px;
+  width:700px;
+  margin-top: 25vh;
+  backround-color:#d40808;
+}
+header {
+    background-color: #f39c12; /* Bright color */
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  height:100px;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    max-width: 150px;
+    transition: max-width 0.3s ease;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #333;
+}
+
+header nav ul li.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f39c12;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1001;
+}
+
+header nav ul li .dropdown-content li {
+    display: block;
+}
+
+.hero {
+    background-color: #3498db; /* Bright color */
+    color: #fff;
+   height:100vh;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.about {
+    background-color: #2ecc71; /* Bright color */
+    color: #fff;
+    padding: 80px 0;
+    height:80vh;
+    text-align: center;
+}
+
+footer {
+    background-color: #f39c12; /* Bright color */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Shrink logo on scroll */
+header.shrink {
+    background-color: #f1c40f; /* Bright color */
+}
+
+header.shrink .logo img {
+    max-width: 100px;
+}
+
+/* Scroll-to-top button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3498db; /* Bright color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: none;
+}
+.headman{
+  color:#f1f1f1;
+}
+.scroll-to-top:hover {
+    background-color: #2980b9; /* Darker shade on hover */
+}
+.hero .container{
+   border:#bff077 5px double;
+  border-radius:20px;
+  width:700px;
+  margin-top: 25vh;
+  backround-color:#d40808;
+}
+.course {
+    background-color: #f000ff; /* Bright color */
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.course h2 {
+    font-size: 2.5em;
+}
+
+.course p {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
